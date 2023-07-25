@@ -1,0 +1,80 @@
+#include<bits/stdc++.h>;
+using namespace std;
+//Inheritance.cpp
+/*//single
+class A{};
+class B: public A{};
+//multiple
+class A{};
+class B{};
+class C:public  A,public B{};
+//multilevel
+class A{};
+class B:public A{};
+class C:public B{};
+//heri.
+class A{};
+class B:public A{};
+class C:public A{};
+//hybrid
+class A{};
+class B{};
+class C:public A,public B{};
+class D:public C{};
+class E:public C{};*/
+
+
+/*//mode.cpp
+//single
+class A{
+    int a;
+    protected:
+    int b;
+    public:
+    int c;
+
+};
+class B:public A{
+    public:
+}*/
+
+
+//overriding_fun.cpp
+
+class Animal{
+    public:
+    void speak()
+    {
+        cout<<"hello"<<endl;
+    }
+};
+class Dog:public Animal{
+    public:
+     void speak()
+    {
+        cout<<"hello hii"<<endl;
+    }
+};
+class Cat:public Animal
+{
+    public:
+     void speak()
+    {
+        cout<<"hello hello"<<endl;
+    }
+}
+
+
+int main()
+{
+    //B obj;
+    Animal a;
+    Dog d;
+    Cat c;
+    a.speak();
+    c.speak();
+    d.speak();
+
+    return 0;
+
+}
